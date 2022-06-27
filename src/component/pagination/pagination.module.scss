@@ -1,0 +1,26 @@
+.wrap{
+    display: flex;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+
+        li:not(:first-child):not(:last-child){
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid #c4c4c4;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+    }
+
+    :global{
+        .selected{
+            background-color: #ffdf8c;
+
+        }
+    }
+}
